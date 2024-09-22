@@ -1,6 +1,8 @@
 package com.example.myfoodapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,14 @@ public class WelcomeActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+
+    public void register(View view) {
+        startActivity(new Intent(WelcomeActivity.this,RegistrationActivity.class));
+    }
+
+    public void login(View view) {
+        startActivity(new Intent(WelcomeActivity.this , LoginActivity.class));
     }
 }
