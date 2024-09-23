@@ -28,4 +28,8 @@
     <string name="s_b_m">S B M</string>
     <string name="sbm_overlord_gmail_com">sbm.overlord@gmail.com</string>
     <string name="log_out">Log Out</string>
+    <string name="search_your_food">Search your Food!</string>
+    <string name="hello_sbm">Hello SBM</string>
+    <string name="what_do_you_want">What do you want?</string>
+    <string name="pizza" >Pizza</string>
 </resources>
