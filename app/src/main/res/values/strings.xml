@@ -19,4 +19,13 @@
     <string name="password">Password</string>
     <string name="already_registered">Already Registered?</string>
     <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="home">Home</string>
+    <string name="favourite">Favourite</string>
+    <string name="daily_meal">Daily Meal</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_cart">My Cart</string>
+    <string name="s_b_m">S B M</string>
+    <string name="sbm_overlord_gmail_com">sbm.overlord@gmail.com</string>
+    <string name="log_out">Log Out</string>
 </resources>
