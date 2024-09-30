@@ -1,5 +1,6 @@
 package com.example.myfoodapp.ui.dailymeal;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,6 +25,7 @@ public class DailyMealFragment extends Fragment {
     List<DailyMealModel> dailyMealModels;
     DailyMealAdapter dailyMealAdapter;
 
+    @SuppressLint("NotifyDataSetChanged")
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_daily_meal, container, false);
@@ -32,11 +34,11 @@ public class DailyMealFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         dailyMealModels = new ArrayList<>();
 
-        dailyMealModels.add(new DailyMealModel(R.drawable.breakfast, "Breakfast", "10% off", "Breakfast", "Important detail for a productive day"));
-        dailyMealModels.add(new DailyMealModel(R.drawable.lunch, "Lunch", "30% off", "Lunch", "Tasty and Nourishing"));
-        dailyMealModels.add(new DailyMealModel(R.drawable.dinner, "Dinner", "30% off", "Dinner", "Large portions"));
-        dailyMealModels.add(new DailyMealModel(R.drawable.sweets, "Sweets", "15% off", "Sweets", "Sweet and simple"));
-        dailyMealModels.add(new DailyMealModel(R.drawable.coffe, "Coffee", "10% off", "Coffee", "For full of energy"));
+        dailyMealModels.add(new DailyMealModel(R.drawable.breakfast, "Breakfast", "10% off", "breakfast", "Important detail for a productive day"));
+        dailyMealModels.add(new DailyMealModel(R.drawable.lunch, "Lunch", "30% off", "lunch", "Tasty and Nourishing"));
+        dailyMealModels.add(new DailyMealModel(R.drawable.dinner, "Dinner", "30% off", "dinner", "Large portions"));
+        dailyMealModels.add(new DailyMealModel(R.drawable.sweets, "Sweets", "15% off", "sweets", "Sweet and simple"));
+        dailyMealModels.add(new DailyMealModel(R.drawable.coffe, "Coffee", "10% off", "coffee", "For full of energy"));
 
         dailyMealAdapter = new DailyMealAdapter(getContext(), dailyMealModels);
         recyclerView.setAdapter(dailyMealAdapter);
